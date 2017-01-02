@@ -1,5 +1,5 @@
 
-var interest, distance, mymap, facilities;
+var interest, mymap, facilities;
 window.addEventListener("load", function () {
     if(navigator.geolocation){
       //位置情報を取得
@@ -74,9 +74,6 @@ function getLocations(){
 
 function addMarkers(){
   interest = document.getElementById("interest").value;
-  distance = document.getElementById("distance").value;
-
-
 
   var starIcon = L.AwesomeMarkers.icon({
     prefix: 'fa',
