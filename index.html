@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dist/leaflet.awesome-markers.css">
+
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <script src="dist/leaflet.awesome-markers.min.js"></script>
+
+    <title>施設検索</title>
+  </head>
+  <body>
+    <h1>周辺施設検索</h1>
+    <p>
+      Find nearby
+      <select onchange="getLocations();" id="interest">
+        <!-- <option value="default">Select</option> -->
+        <option value="公園">公園</option>
+        <option value="児童遊園">児童遊園</option>
+        <option value="特定児童遊園">特定児童遊園</option>
+        <option value="都立公園">都立公園</option>
+        <option value="区立保育園">区立保育園</option>
+        <option value="公設民営保育園">公設民営保育園</option>
+        <option value="私立保育園">私立保育園</option>
+        <option value="認証保育所">認証保育所</option>
+        <option value="すまいるスクール">すまいるスクール</option>
+        <option value="保育所型認定こども園">保育所型認定こども園</option>
+        <option value="区立幼稚園">区立幼稚園</option>
+        <option value="私立幼稚園">私立幼稚園</option>
+        <option value="区立小学校">区立小学校</option>
+        <option value="児童センター">児童センター</option>
+        <option value="地域センター">地域センター</option>
+        <option value="文化施設">文化施設</option>
+        <option value="区役所">区役所</option>
+      </select>
+    </p>
+    <div id="mapid" style="height:600px; width:840px;"></div>
+
+  </body>
+</html>
