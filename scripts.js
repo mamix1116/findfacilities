@@ -106,19 +106,6 @@ function addMarkers(){
 
 }
 
-function findPlace(){
-
-  $.getJSON("facilities.geojson", function(data) {
-      var geojson = L.geoJson(data, {
-          onEachFeature: function (feature, layer) {
-              layer.bindPopup(feature.properties.name);
-          }
-      });
-      geojson.addTo(mymap);
-  });
-
-}
-
 function onError(error){
   switch(error.code){
     case PERMISSION_DENIED:
